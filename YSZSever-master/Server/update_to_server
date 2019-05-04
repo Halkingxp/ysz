@@ -1,0 +1,89 @@
+#!/bin/bash
+
+SHELL_PATH=$(cd `dirname $0`; pwd)
+echo "================= 当前执行脚本路径:$SHELL_PATH ================="
+if [ "$1" = "hub" ]; then
+	echo "更新Hub脚本文件到外网服务器"
+elif [ "$1" = "game" ]; then
+	echo "更新Game脚本文件到外网服务器"
+elif [ "$1" = "huball" ]; then
+	echo "更新Hub执行程序和脚本文件到外网服务器"
+elif [ "$1" = "gameall" ]; then
+	echo "更新Game执行程序和脚本文件到外网服务器"
+else
+	svn up .
+	cd objdir
+	make install
+	
+	echo "============= 完成本地服务器的更新!!!!!! ============="
+	exit 0
+fi
+
+NAME=""
+IP=""
+if [ "$2" = "in" ]; then
+	IP="120.77.35.48"
+	NAME="内部测试服-CJYSZ-Web"
+elif [ "$2" = "out" ]; then
+	IP="39.108.163.27"
+	NAME="外部测试服-DHJH-Web"
+elif [ "$2" = "ios" ]; then
+	IP="119.23.204.11"
+	NAME="苹果审核服"
+elif [ "$2" = "10" ]; then
+	IP="120.77.35.48"
+	NAME="帝濠金花-10服"
+else
+	echo "第二参数无效, 请输入正确的ServerID, 从1开始"
+	exit 0
+fi
+
+svn up .
+cd objdir
+make install
+
+echo "================= 目标服务器IP: $IP 名字:$NAME ================="
+if [ "$1" = "huball" ]; then
+	echo ""
+	echo "编译安装后在更新到外网服务器~~~!!!!!!!!!"
+	echo "编译安装后在更新到外网服务器~~~!!!!!!!!!"
+	echo "编译安装后在更新到外网服务器~~~!!!!!!!!!"
+	echo ""
+	scp -rC $SHELL_PATH/server/bin/dbserver root@$IP:/home/server/bin/
+	scp -rC $SHELL_PATH/server/bin/hubserver root@$IP:/home/server/bin/
+	scp -rC $SHELL_PATH/server/bin/HubScript root@$IP:/home/server/bin/
+	scp -rC $SHELL_PATH/server/bin/gameserver root@$IP:/home/server/bin/
+	scp -rC $SHELL_PATH/server/bin/GameScript root@$IP:/home/server/bin/
+	
+elif [ "$1" = "gameall" ]; then
+	echo ""
+	echo "编译安装后在更新到外网服务器~~~!!!!!!!!!"
+	echo "编译安装后在更新到外网服务器~~~!!!!!!!!!"
+	echo "编译安装后在更新到外网服务器~~~!!!!!!!!!"
+	echo ""
+	scp -rC $SHELL_PATH/server/bin/dbserver root@$IP:/home/server/bin/
+	scp -rC $SHELL_PATH/server/bin/gameserver root@$IP:/home/server/bin/
+	scp -rC $SHELL_PATH/server/bin/GameScript root@$IP:/home/server/bin/
+	
+elif [ "$1" = "hub" ]; then
+	scp -rC $SHELL_PATH/server/bin/HubScript root@$IP:/home/server/bin/
+	scp -rC $SHELL_PATH/server/bin/GameScript root@$IP:/home/server/bin/
+	
+elif [ "$1" = "game" ]; then
+	scp -rC $SHELL_PATH/server/bin/GameScript root@$IP:/home/server/bin/
+	
+fi
+
+echo "============= 完成目标服务器的更新!! IP: $IP 名字:$NAME ============="
+if [ "$2" = "3" ]; then
+echo "============= 完成更新后, 修改苹果审核服务器特有标志 ============="
+echo "============= 完成更新后, 修改苹果审核服务器特有标志 ============="
+echo "============= 完成更新后, 修改苹果审核服务器特有标志 ============="
+echo "============= 完成更新后, 修改红包标志 ==========================="
+echo "============= 完成更新后, 修改邀请码标志 ========================="
+echo "============= 完成更新后, 修改支付标志 ==========================="
+echo "============= 完成更新后, 修改苹果审核服务器特有标志 ============="
+echo "============= 完成更新后, 修改苹果审核服务器特有标志 ============="
+echo "============= 完成更新后, 修改苹果审核服务器特有标志 ============="
+fi
+

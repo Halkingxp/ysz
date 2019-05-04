@@ -1,0 +1,38 @@
+#!/bin/bash
+svn up .
+
+#if [ "$2" == "clean" ]; then
+	rm -rf objdir
+	rm -rf server
+#fi
+
+luaFile=$PWD/server/lib/liblua.a
+libPath=$PWD/server/lib/
+objPath=$PWD/objdir/
+sourcePath=$PWD/src/GameServer/Script/
+destPath=$PWD/server/bin/Script/
+
+if [ ! -d "$libPath" ]; then
+	mkdir -p $PWD/server/lib
+fi
+
+cp $PWD/library/liblua.a $PWD/server/lib
+cp $PWD/library/libraknet.a $PWD/server/lib
+
+if [ ! -d "$objPath" ]; then
+	mkdir objdir
+	cd objdir
+	
+	if [ "$1" == "d" ]; then
+		cmake .. -DDEBUG=1
+		make -j8 && make install
+	else
+		cmake ..
+		make -j8 && make install
+	fi
+else
+	cd objdir
+	make -j8 && make install
+fi
+
+

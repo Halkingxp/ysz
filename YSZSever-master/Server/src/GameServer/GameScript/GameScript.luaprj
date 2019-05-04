@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Project Name="GameScript.luaprj" Cmd="E:\SVN\Project_Z\trunk\Server\bin\Win32_Debug\GameServer.exe" Arg="" Dir="E:\SVN\Project_Z\trunk\Server\bin\Win32_Debug" Toggle="true" >
+    <LuaFile RelativePath=".\init.lua" />
+    <LuaFile RelativePath=".\UpdateMgr.lua" />
+    <LuaFile RelativePath=".\TestMsg.lua" />
+    <LuaFile RelativePath=".\ConfigMgr.lua" />
+    <Filter Name="Tools" Directory=".\Tools" Toggle="true" >
+        <LuaFile RelativePath=".\Tools\CommonFun.lua" />
+        <LuaFile RelativePath=".\Tools\Message.lua" />
+        <LuaFile RelativePath=".\Tools\ProtocolHandle.lua" />
+    </Filter>
+    <LuaFile RelativePath=".\NetMgr.lua" />
+    <LuaFile RelativePath=".\Protocol.lua" />
+    <LuaFile RelativePath=".\ServerConfig.lua" />
+    <Filter Name="Room" Toggle="true" >
+        <LuaFile RelativePath=".\Room\RoomMgr.lua" />
+        <LuaFile RelativePath=".\Room\Room.lua" />
+    </Filter>
+    <Filter Name="Account" Toggle="true" >
+        <LuaFile RelativePath=".\Account\AccountMgr.lua" />
+        <LuaFile RelativePath=".\Account\Account.lua" />
+    </Filter>
+    <Filter Name="Config" Toggle="true" >
+        <LuaFile RelativePath=".\Config\room.lua" />
+        <LuaFile RelativePath=".\Config\vip.lua" />
+        <LuaFile RelativePath=".\Config\test.lua" />
+        <LuaFile RelativePath=".\Config\store.lua" />
+        <LuaFile RelativePath=".\Config\card.lua" />
+        <LuaFile RelativePath=".\Config\public.lua" />
+    </Filter>
+    <Filter Name="SallHorn" Toggle="true" >
+        <LuaFile RelativePath=".\SmallHorn\SmallHornMgr.lua" />
+    </Filter>
+    <Filter Name="Email" Directory=".\Email" Toggle="true" >
+        <LuaFile RelativePath=".\Email\EmailMgr.lua" />
+    </Filter>
+    <Filter Name="Rank" Directory=".\Rank" Toggle="true" >
+        <LuaFile RelativePath=".\Rank\RankMgr.lua" />
+    </Filter>
+    <Filter Name="Backstage" Toggle="true" >
+        <LuaFile RelativePath=".\Backstage\Backstage.lua" />
+    </Filter>
+    <LuaFile RelativePath=".\WhiteList.lua" />
+    <LuaFile RelativePath=".\BlackList.lua" />
+</Project>

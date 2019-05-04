@@ -1,0 +1,3 @@
+#!/bin/bash
+# Automatically Run gameserver-autorun Script
+    tmux new-session -d -s 'gameserver' '/opt/game/bin/gameserver-run'

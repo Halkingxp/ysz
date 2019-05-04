@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EC3BB1BC-9EFC-4993-814A-5FFEE88DBA0E}</ProjectGuid>
+    <RootNamespace>GameServer</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\bin\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\bin\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\library;..\..\library\raknet;..\..\library\RapidXml;..\..\library\RapidJson;..\..\src\GameServer;..\..\library\GDK;..\..\src\Public;..\..\library\python;..\..\library\curl-7.32.0\include;..\..\library\MySql;..\..\library\eigen;..\..\library\lua-5.3.0\src;..\..\library\event2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4091;4075;4098;4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;libcurld.lib;libeay32.lib;ssleay32.lib;libmySQL.lib;Wldap32.lib;libraknet.lib;python27.lib;lua.lib;libevent.lib;libevent_core.lib;libevent_extras.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\library;..\..\library\raknet;..\..\library\RapidXml;..\..\library\RapidJson;..\..\src\GameServer;..\..\library\GDK;..\..\src\Public;..\..\library\python;..\..\library\curl-7.32.0\include;..\..\library\MySql;..\..\library\eigen;..\..\library\lua-5.3.0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4091;4075;4098;4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;ssleay32.lib;libeay32.lib;libmySQL.lib;libcurl.lib;python27.lib;libraknet.lib;lua.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\library\GDK\Algorithm\Base64.cpp" />
+    <ClCompile Include="..\..\library\GDK\Algorithm\HMacSha1.cpp" />
+    <ClCompile Include="..\..\library\GDK\Algorithm\MD5.cpp" />
+    <ClCompile Include="..\..\library\GDK\Algorithm\SHA1.cpp" />
+    <ClCompile Include="..\..\library\GDK\Command\Command.cpp" />
+    <ClCompile Include="..\..\library\GDK\DataBase\DataBase.cpp" />
+    <ClCompile Include="..\..\library\GDK\DataBase\Field.cpp" />
+    <ClCompile Include="..\..\library\GDK\DataBase\QueryResult.cpp" />
+    <ClCompile Include="..\..\library\GDK\DataStructure\MsgQueue.cpp" />
+    <ClCompile Include="..\..\library\GDK\Formula\Formula.cpp" />
+    <ClCompile Include="..\..\library\GDK\Http\HttpClient.cpp" />
+    <ClCompile Include="..\..\library\GDK\Json\Json.cpp" />
+    <ClCompile Include="..\..\library\GDK\log4z\log4z.cpp" />
+    <ClCompile Include="..\..\library\GDK\Packet\Packet.cpp" />
+    <ClCompile Include="..\..\library\GDK\Packet\PacketPool.cpp" />
+    <ClCompile Include="..\..\library\GDK\PathCalculation\MeshPath.cpp" />
+    <ClCompile Include="..\..\library\GDK\PathCalculation\NavMesh.cpp" />
+    <ClCompile Include="..\..\library\GDK\Script\ScriptLua.cpp" />
+    <ClCompile Include="..\..\library\GDK\Script\ScriptPython.cpp" />
+    <ClCompile Include="..\..\library\GDK\Socket\NetClient.cpp" />
+    <ClCompile Include="..\..\library\GDK\Socket\NetServer.cpp" />
+    <ClCompile Include="..\..\library\GDK\Statistics\StatisticsMgr.cpp" />
+    <ClCompile Include="..\..\library\GDK\StringFilter\StringFilter.cpp" />
+    <ClCompile Include="..\..\library\GDK\Thread\Thread.cpp" />
+    <ClCompile Include="..\..\library\GDK\Timer\TimerMgr.cpp" />
+    <ClCompile Include="..\..\library\GDK\Timer\TimerWheel.cpp" />
+    <ClCompile Include="..\..\library\GDK\Xml\Xml.cpp" />
+    <ClCompile Include="GameServer.cpp" />
+    <ClCompile Include="World\BackstageMgr.cpp" />
+    <ClCompile Include="World\ServerCommend.cpp" />
+    <ClCompile Include="World\ThreadWatch.cpp" />
+    <ClCompile Include="World\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\library\GDK\Algorithm\Base64.h" />
+    <ClInclude Include="..\..\library\GDK\Algorithm\HMacSha1.h" />
+    <ClInclude Include="..\..\library\GDK\Algorithm\MD5.h" />
+    <ClInclude Include="..\..\library\GDK\Algorithm\SHA1.h" />
+    <ClInclude Include="..\..\library\GDK\Assert\Assert.h" />
+    <ClInclude Include="..\..\library\GDK\Command\Command.h" />
+    <ClInclude Include="..\..\library\GDK\Data.h" />
+    <ClInclude Include="..\..\library\GDK\DataBase\DataBase.h" />
+    <ClInclude Include="..\..\library\GDK\DataBase\Field.h" />
+    <ClInclude Include="..\..\library\GDK\DataBase\QueryResult.h" />
+    <ClInclude Include="..\..\library\GDK\DataStructure\MsgQueue.h" />
+    <ClInclude Include="..\..\library\GDK\DataStructure\Queue.h" />
+    <ClInclude Include="..\..\library\GDK\Define.h" />
+    <ClInclude Include="..\..\library\GDK\DumpFile\DumpFile.h" />
+    <ClInclude Include="..\..\library\GDK\Formula\Formula.h" />
+    <ClInclude Include="..\..\library\GDK\Http\HttpClient.h" />
+    <ClInclude Include="..\..\library\GDK\Json\Json.h" />
+    <ClInclude Include="..\..\library\GDK\log4z\log4z.h" />
+    <ClInclude Include="..\..\library\GDK\Packet\Packet.h" />
+    <ClInclude Include="..\..\library\GDK\Packet\PacketPool.h" />
+    <ClInclude Include="..\..\library\GDK\PathCalculation\MeshPath.h" />
+    <ClInclude Include="..\..\library\GDK\PathCalculation\NavMesh.h" />
+    <ClInclude Include="..\..\library\GDK\PathCalculation\QuadNavmesh.h" />
+    <ClInclude Include="..\..\library\GDK\Script\ScriptLua.h" />
+    <ClInclude Include="..\..\library\GDK\Script\ScriptPython.h" />
+    <ClInclude Include="..\..\library\GDK\Socket\NetClient.h" />
+    <ClInclude Include="..\..\library\GDK\Socket\NetServer.h" />
+    <ClInclude Include="..\..\library\GDK\Statistics\StatisticsMgr.h" />
+    <ClInclude Include="..\..\library\GDK\StringFilter\StringFilter.h" />
+    <ClInclude Include="..\..\library\GDK\Thread\Thread.h" />
+    <ClInclude Include="..\..\library\GDK\Timer\TimerMgr.h" />
+    <ClInclude Include="..\..\library\GDK\Timer\TimerWheel.h" />
+    <ClInclude Include="..\..\library\GDK\Tools\CalculateTools.h" />
+    <ClInclude Include="..\..\library\GDK\Tools\StringTools.h" />
+    <ClInclude Include="..\..\library\GDK\Tools\TimeTools.h" />
+    <ClInclude Include="..\..\library\GDK\Tools\Tools.h" />
+    <ClInclude Include="..\..\library\GDK\Xml\Xml.h" />
+    <ClInclude Include="..\Public\Protocol.h" />
+    <ClInclude Include="..\Public\ServerDefine.h" />
+    <ClInclude Include="World\BackstageMgr.h" />
+    <ClInclude Include="World\ServerCommend.h" />
+    <ClInclude Include="World\ThreadWatch.h" />
+    <ClInclude Include="World\World.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

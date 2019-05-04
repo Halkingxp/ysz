@@ -1,0 +1,6 @@
+2017-09-21 18:52:22.444 LOG_ALARM -----------------  log4z thread started!   ---------------------------- log4z.cpp:1786
+2017-09-21 18:52:22.446 LOG_ALARM logger id=0 key=Main name=Main path=./log/ level=2 display=true log4z.cpp:1796
+2017-09-21 18:52:22.512 LOG_INFO  Client Connect Server: SocketID:211831992, Remote Address: 127.0.0.1|10000 netclient.cpp:106
+2017-09-21 18:52:23.513 LOG_INFO  ◤ GC -> Before Use Memory:0.13M ◥ scriptlua.cpp:360
+2017-09-21 18:52:23.514 LOG_INFO  ◤ GC -> After  Use Memory:0.08M ◥ scriptlua.cpp:360
+2017-09-21 18:52:23.663 LOG_INFO  Server Listening Port: 192.168.2.48|20000  netserver.cpp:88

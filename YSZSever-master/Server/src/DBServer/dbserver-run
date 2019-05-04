@@ -1,0 +1,15 @@
+#!/bin/bash
+# Automatically Restart Script
+while :
+do
+    echo "dbserver startup ..."
+    ulimit -c unlimited
+    ulimit -n 60000
+
+    $PWD/dbserver
+
+    $pid = $(ps -ef | grep "$PWD/dbserver" | grep -v "grep")
+    wait $pid
+        # kill -9 $pidof $PWD/mapserver
+    echo `date` ", dbserver crashed and restarted." >> crash.log
+done

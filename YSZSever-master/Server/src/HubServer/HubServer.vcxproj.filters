@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="GDK">
+      <UniqueIdentifier>{88f82558-905f-4cac-948e-af1a8837c823}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\Algorithm">
+      <UniqueIdentifier>{8ffa1f3a-62ce-4207-8ceb-f2970ea603ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\Assert">
+      <UniqueIdentifier>{8c2efdf3-b6b4-4ec3-82f0-527d85563285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\Command">
+      <UniqueIdentifier>{dcd078e1-e428-4756-8c1e-c35b309a77b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\DataBase">
+      <UniqueIdentifier>{7ccf635e-b2c3-4b95-8b3b-61a87781ee5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\DataStructure">
+      <UniqueIdentifier>{8ac06410-c482-4693-8adc-7ee51e99e096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\DumpFile">
+      <UniqueIdentifier>{9094aaf9-e647-43fe-aaa2-bf6de9ef1598}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\Socket">
+      <UniqueIdentifier>{720565b6-c1b9-4b2b-af51-c1fd82a18b24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\Statistics">
+      <UniqueIdentifier>{459a1155-5f79-4828-be62-a2ffae63341d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\Thread">
+      <UniqueIdentifier>{23720f31-a8c8-4568-927e-f525cd075c29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\Timer">
+      <UniqueIdentifier>{8a751937-0583-4567-8ef3-366fdbcf0f45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\Tools">
+      <UniqueIdentifier>{dc2d05ac-f9a2-4488-af92-fe412e571714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public">
+      <UniqueIdentifier>{efb59e3a-0c87-4e35-b1b0-49ef1e04576f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{7c4b47fc-118e-43bc-8369-365ae5e408a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\World">
+      <UniqueIdentifier>{74639006-f674-4935-9500-43a537663710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\Json">
+      <UniqueIdentifier>{ffa3f711-a095-4531-8dcf-508deb049e59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\Xml">
+      <UniqueIdentifier>{c53d8b6e-740e-4578-8380-716741e5c1af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\Packet">
+      <UniqueIdentifier>{b15a094a-5eb7-45fd-9838-13bc16a415db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\Script">
+      <UniqueIdentifier>{f962df3b-829c-4a54-a020-7ce05a99a3dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\StringFilter">
+      <UniqueIdentifier>{eb9fb2ed-02f6-4853-abf1-8be3b5949bc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\PathCalculation">
+      <UniqueIdentifier>{ba4df883-44f0-47e3-b7d0-23c1e14f4684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\Formula">
+      <UniqueIdentifier>{209ea9aa-5ea8-487c-b178-a24d521ecad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\log4z">
+      <UniqueIdentifier>{0c92240d-3fe4-411b-8bf6-f2ef3e0cf77e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GDK\Http">
+      <UniqueIdentifier>{359ed256-ae0b-46b7-a11a-8ff81e2dd386}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HubServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="World\World.cpp">
+      <Filter>Server\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Command\Command.cpp">
+      <Filter>GDK\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\DataBase\DataBase.cpp">
+      <Filter>GDK\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\DataBase\Field.cpp">
+      <Filter>GDK\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\DataBase\QueryResult.cpp">
+      <Filter>GDK\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\DataStructure\MsgQueue.cpp">
+      <Filter>GDK\DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Json\Json.cpp">
+      <Filter>GDK\Json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Xml\Xml.cpp">
+      <Filter>GDK\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Statistics\StatisticsMgr.cpp">
+      <Filter>GDK\Statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Thread\Thread.cpp">
+      <Filter>GDK\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Timer\TimerMgr.cpp">
+      <Filter>GDK\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Packet\Packet.cpp">
+      <Filter>GDK\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Algorithm\Base64.cpp">
+      <Filter>GDK\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Algorithm\MD5.cpp">
+      <Filter>GDK\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Algorithm\SHA1.cpp">
+      <Filter>GDK\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Algorithm\HMacSha1.cpp">
+      <Filter>GDK\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="World\ThreadWatch.cpp">
+      <Filter>Server\World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\ServerCommend.cpp">
+      <Filter>Server\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\StringFilter\StringFilter.cpp">
+      <Filter>GDK\StringFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\PathCalculation\MeshPath.cpp">
+      <Filter>GDK\PathCalculation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\PathCalculation\NavMesh.cpp">
+      <Filter>GDK\PathCalculation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Formula\Formula.cpp">
+      <Filter>GDK\Formula</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Script\ScriptLua.cpp">
+      <Filter>GDK\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Script\ScriptPython.cpp">
+      <Filter>GDK\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\log4z\log4z.cpp">
+      <Filter>GDK\log4z</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Socket\NetClient.cpp">
+      <Filter>GDK\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Socket\NetServer.cpp">
+      <Filter>GDK\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Packet\PacketPool.cpp">
+      <Filter>GDK\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Timer\TimerWheel.cpp">
+      <Filter>GDK\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Algorithm\CryptHelper.cpp">
+      <Filter>GDK\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\library\GDK\Http\HttpClient.cpp">
+      <Filter>GDK\Http</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="World\World.h">
+      <Filter>Server\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Assert\Assert.h">
+      <Filter>GDK\Assert</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Command\Command.h">
+      <Filter>GDK\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\DataBase\DataBase.h">
+      <Filter>GDK\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\DataBase\Field.h">
+      <Filter>GDK\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\DataBase\QueryResult.h">
+      <Filter>GDK\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\DataStructure\MsgQueue.h">
+      <Filter>GDK\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\DataStructure\Queue.h">
+      <Filter>GDK\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\DumpFile\DumpFile.h">
+      <Filter>GDK\DumpFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Json\Json.h">
+      <Filter>GDK\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Xml\Xml.h">
+      <Filter>GDK\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Statistics\StatisticsMgr.h">
+      <Filter>GDK\Statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Thread\Thread.h">
+      <Filter>GDK\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Timer\TimerMgr.h">
+      <Filter>GDK\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Tools\CalculateTools.h">
+      <Filter>GDK\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Tools\StringTools.h">
+      <Filter>GDK\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Tools\TimeTools.h">
+      <Filter>GDK\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Tools\Tools.h">
+      <Filter>GDK\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Define.h">
+      <Filter>GDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Packet\Packet.h">
+      <Filter>GDK\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Protocol.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Algorithm\Base64.h">
+      <Filter>GDK\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Algorithm\MD5.h">
+      <Filter>GDK\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Algorithm\SHA1.h">
+      <Filter>GDK\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Algorithm\HMacSha1.h">
+      <Filter>GDK\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="World\ThreadWatch.h">
+      <Filter>Server\World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\ServerCommend.h">
+      <Filter>Server\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\StringFilter\StringFilter.h">
+      <Filter>GDK\StringFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\PathCalculation\MeshPath.h">
+      <Filter>GDK\PathCalculation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\PathCalculation\NavMesh.h">
+      <Filter>GDK\PathCalculation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\PathCalculation\QuadNavmesh.h">
+      <Filter>GDK\PathCalculation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Formula\Formula.h">
+      <Filter>GDK\Formula</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Data.h">
+      <Filter>GDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Script\ScriptLua.h">
+      <Filter>GDK\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Script\ScriptPython.h">
+      <Filter>GDK\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\log4z\log4z.h">
+      <Filter>GDK\log4z</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Socket\NetClient.h">
+      <Filter>GDK\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Socket\NetServer.h">
+      <Filter>GDK\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Packet\PacketPool.h">
+      <Filter>GDK\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Timer\TimerWheel.h">
+      <Filter>GDK\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Algorithm\CryptHelper.h">
+      <Filter>GDK\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ServerDefine.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\library\GDK\Http\HttpClient.h">
+      <Filter>GDK\Http</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

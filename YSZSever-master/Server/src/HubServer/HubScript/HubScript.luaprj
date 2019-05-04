@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Project Name="HubScript.luaprj" Cmd="E:\SVN\Project_Z\trunk\Server\bin\Win32_Debug\HubServer.exe" Arg="" Dir="E:\SVN\Project_Z\trunk\Server\src\HubServer\HubScript" Toggle="false" >
+    <LuaFile RelativePath=".\init.lua" />
+    <LuaFile RelativePath=".\UpdateMgr.lua" />
+    <LuaFile RelativePath=".\TestMsg.lua" />
+    <LuaFile RelativePath=".\ConfigMgr.lua" />
+    <Filter Name="Account" Toggle="true" >
+        <LuaFile RelativePath=".\Account\AccountMgr.lua" />
+    </Filter>
+    <Filter Name="Tools" Toggle="true" >
+        <LuaFile RelativePath=".\Tools\CommonFun.lua" />
+        <LuaFile RelativePath=".\Tools\Message.lua" />
+        <LuaFile RelativePath=".\Tools\ProtocolHandle.lua" />
+    </Filter>
+    <LuaFile RelativePath=".\NetMgr.lua" />
+    <LuaFile RelativePath=".\Protocol.lua" />
+    <LuaFile RelativePath=".\ServerConfig.lua" />
+    <Filter Name="Config" Directory=".\Config" Toggle="true" >
+        <LuaFile RelativePath=".\Config\server.lua" />
+    </Filter>
+</Project>

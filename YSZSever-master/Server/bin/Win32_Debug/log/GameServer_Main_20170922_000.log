@@ -1,0 +1,22 @@
+2017-09-22 09:57:15.448 LOG_ALARM -----------------  log4z thread started!   ---------------------------- log4z.cpp:1786
+2017-09-22 09:57:15.449 LOG_ALARM logger id=0 key=Main name=Main path=./log/ level=2 display=true log4z.cpp:1796
+2017-09-22 09:57:15.688 LOG_INFO  Client Connect Server: SocketID:211831992, Remote Address: 127.0.0.1|10000 netclient.cpp:106
+2017-09-22 09:57:16.715 LOG_INFO  Client Connect Server: SocketID:2341481157, Remote Address: 127.0.0.1|20000 netclient.cpp:106
+2017-09-22 09:57:18.733 LOG_INFO  ◤注册每日十一点更新计时器, 间隔3762秒 ◥ scriptlua.cpp:360
+2017-09-22 09:57:18.734 LOG_INFO  ◤注册每日零点更新计时器, 间隔50561秒 ◥ scriptlua.cpp:360
+2017-09-22 09:57:18.735 LOG_INFO  ◤ GC -> Before Use Memory:6.11M ◥ scriptlua.cpp:360
+2017-09-22 09:57:18.764 LOG_INFO  ◤ GC -> After  Use Memory:3.29M ◥ scriptlua.cpp:360
+2017-09-22 09:57:18.881 LOG_INFO  Server Listening Port: 192.168.2.48|30000  netserver.cpp:88
+2017-09-22 10:49:18.988 LOG_ALARM -----------------  log4z thread started!   ---------------------------- log4z.cpp:1786
+2017-09-22 10:49:18.989 LOG_ALARM logger id=0 key=Main name=Main path=./log/ level=2 display=true log4z.cpp:1796
+2017-09-22 10:49:19.240 LOG_INFO  Client Connect Server: SocketID:211831992, Remote Address: 127.0.0.1|10000 netclient.cpp:106
+2017-09-22 10:49:20.266 LOG_INFO  Client Connect Server: SocketID:2341481157, Remote Address: 127.0.0.1|20000 netclient.cpp:106
+2017-09-22 10:49:22.287 LOG_INFO  ◤注册每日十一点更新计时器, 间隔638秒 ◥ scriptlua.cpp:360
+2017-09-22 10:49:22.288 LOG_INFO  ◤注册每日零点更新计时器, 间隔47437秒 ◥ scriptlua.cpp:360
+2017-09-22 10:49:22.289 LOG_INFO  ◤ GC -> Before Use Memory:6.11M ◥ scriptlua.cpp:360
+2017-09-22 10:49:22.324 LOG_INFO  ◤ GC -> After  Use Memory:3.29M ◥ scriptlua.cpp:360
+2017-09-22 10:49:22.433 LOG_INFO  Server Listening Port: 192.168.2.48|30000  netserver.cpp:88
+2017-09-22 11:00:00.002 LOG_INFO  ◤注册每日十一点更新计时器, 间隔86400秒 ◥ scriptlua.cpp:360
+2017-09-22 11:00:00.002 LOG_INFO  ◤ GC -> Before Use Memory:3.39M ◥ scriptlua.cpp:360
+2017-09-22 11:00:00.018 LOG_INFO  ◤ GC -> After  Use Memory:3.30M ◥ scriptlua.cpp:360
+2017-09-22 16:31:50.467 LOG_ERROR Send HttpRequest Error:6; URL:http://jhysz.api.changlaith.com/apply.php?id=1000002&pwd=123456&qq=1&wechat=1&phone=1&sid=1 Data: httpclient.cpp:123

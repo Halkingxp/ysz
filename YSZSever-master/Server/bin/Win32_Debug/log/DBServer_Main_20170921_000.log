@@ -1,0 +1,24 @@
+2017-09-21 18:49:14.310 LOG_ALARM -----------------  log4z thread started!   ---------------------------- log4z.cpp:1786
+2017-09-21 18:49:14.310 LOG_ALARM logger id=0 key=Main name=Main path=./log/ level=2 display=true log4z.cpp:1796
+2017-09-21 18:49:14.365 LOG_INFO  Server Listening Port: 192.168.2.48|10000  netserver.cpp:88
+2017-09-21 18:49:14.369 LOG_ERROR 信息: game_inst 数据库链接失败
+文件: e:\work\[1]svn\project_z\trunk\server\src\dbserver\world\world.cpp
+函数: CWorld::Initialize
+行号: 184
+ assert.h:46
+2017-09-21 18:49:50.355 LOG_ALARM -----------------  log4z thread started!   ---------------------------- log4z.cpp:1786
+2017-09-21 18:49:50.355 LOG_ALARM logger id=0 key=Main name=Main path=./log/ level=2 display=true log4z.cpp:1796
+2017-09-21 18:49:50.400 LOG_INFO  Server Listening Port: 192.168.2.48|10000  netserver.cpp:88
+2017-09-21 18:49:50.405 LOG_ERROR 信息: game_inst 数据库链接失败
+文件: e:\work\[1]svn\project_z\trunk\server\src\dbserver\world\world.cpp
+函数: CWorld::Initialize
+行号: 184
+ assert.h:46
+2017-09-21 18:50:02.441 LOG_ERROR 信息: 启动程序时, World初始化失败, 返回值: -2
+文件: e:\work\[1]svn\project_z\trunk\server\src\dbserver\dbserver.cpp
+函数: main
+行号: 144
+ assert.h:46
+2017-09-21 18:51:59.940 LOG_ALARM -----------------  log4z thread started!   ---------------------------- log4z.cpp:1786
+2017-09-21 18:51:59.940 LOG_ALARM logger id=0 key=Main name=Main path=./log/ level=2 display=true log4z.cpp:1796
+2017-09-21 18:51:59.983 LOG_INFO  Server Listening Port: 192.168.2.48|10000  netserver.cpp:88

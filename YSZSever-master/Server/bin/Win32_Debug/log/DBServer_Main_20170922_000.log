@@ -1,0 +1,12 @@
+2017-09-22 09:56:43.970 LOG_ALARM -----------------  log4z thread started!   ---------------------------- log4z.cpp:1786
+2017-09-22 09:56:43.970 LOG_ALARM logger id=0 key=Main name=Main path=./log/ level=2 display=true log4z.cpp:1796
+2017-09-22 09:56:44.015 LOG_INFO  Server Listening Port: 192.168.2.48|10000  netserver.cpp:88
+2017-09-22 10:28:42.049 LOG_ERROR 信息: NotCommitExecute执行SQL错误,错误码:=1054 错误原因:=Unknown column 'log_PayAll' in 'field list' 
+SQLLen:302 SQL:INSERT INTO log_settlement(log_AccountID,log_RoomID,log_Banker,log_YaLong,log_YaHu,log_YaLongJinHua,log_YaBaozi,log_YaHuJinHua,log_Result,log_LongType,log_HuType,log_ChangeGold,log_PayAll,log_Time) VALUES (1000001,1,0,0,500000,0,0,10000,'鍜屽眬','鏁ｇ墝','鏁ｇ墝',-10000,'鍏ㄨ禂','2017-09-22 10:28:42')
+文件: e:\work\[1]svn\project_z\trunk\server\library\gdk\database\database.cpp
+函数: CDataBase::NotCommitExecute
+行号: 339
+ assert.h:46
+2017-09-22 10:49:02.532 LOG_ALARM -----------------  log4z thread started!   ---------------------------- log4z.cpp:1786
+2017-09-22 10:49:02.532 LOG_ALARM logger id=0 key=Main name=Main path=./log/ level=2 display=true log4z.cpp:1796
+2017-09-22 10:49:02.572 LOG_INFO  Server Listening Port: 192.168.2.48|10000  netserver.cpp:88

@@ -1,0 +1,9 @@
+2017-09-30 11:04:03.805 LOG_ALARM -----------------  log4z thread started!   ---------------------------- log4z.cpp:1786
+2017-09-30 11:04:03.805 LOG_ALARM logger id=0 key=Main name=Main path=./log/ level=2 display=true log4z.cpp:1796
+2017-09-30 11:04:04.486 LOG_INFO  Client Connect Server: SocketID:211831992, Remote Address: 127.0.0.1|10000 netclient.cpp:106
+2017-09-30 11:04:05.613 LOG_INFO  Client Connect Server: SocketID:2341481157, Remote Address: 127.0.0.1|20000 netclient.cpp:106
+2017-09-30 11:04:07.649 LOG_INFO  ◤注册每日十一点更新计时器, 间隔86153秒 ◥ scriptlua.cpp:360
+2017-09-30 11:04:07.649 LOG_INFO  ◤注册每日零点更新计时器, 间隔46552秒 ◥ scriptlua.cpp:360
+2017-09-30 11:04:07.650 LOG_INFO  ◤ GC -> Before Use Memory:6.11M ◥ scriptlua.cpp:360
+2017-09-30 11:04:07.671 LOG_INFO  ◤ GC -> After  Use Memory:3.29M ◥ scriptlua.cpp:360
+2017-09-30 11:04:08.052 LOG_INFO  Server Listening Port: 192.168.2.48|30000  netserver.cpp:88

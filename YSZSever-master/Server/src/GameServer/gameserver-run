@@ -1,0 +1,16 @@
+#!/bin/bash
+# Automatically Restart Script
+
+while :
+do
+    echo "gameserver startup ..."
+    ulimit -c unlimited
+    ulimit -n 60000
+
+    $PWD/gameserver
+	
+    $pid = $(ps -ef | grep "$PWD/gameserver" | grep -v "grep")
+    wait $pid
+    # kill -9 $pidof $PWD/mapserver
+    echo `date` ", gameserver crashed and restarted." >> crash.log
+done
